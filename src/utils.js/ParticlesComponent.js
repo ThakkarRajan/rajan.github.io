@@ -9,7 +9,8 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 
 const ParticlesComponent = (props) => {
 
-  const [init, setInit] = useState(false);
+  const [ _ , setInit] = useState(false);
+  console.log(_)  
   // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -18,6 +19,7 @@ const ParticlesComponent = (props) => {
       // starting from v2 you can add only the features you need reducing the bundle size
       //await loadAll(engine);
       //await loadFull(engine);
+      
       await loadSlim(engine);
       //await loadBasic(engine);
     }).then(() => {
