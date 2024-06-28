@@ -6,9 +6,14 @@ import { Animate } from 'react-simple-animate'
 const Home = () => {
     const navigate = useNavigate()
     const handleNavToContactMe = () => {
-        navigate('/contact-me')
+        navigate('/contact')
 
     }
+    const handleNavToResume = () => {
+        navigate('/resume')
+
+    }
+    
 
     return (
 
@@ -35,7 +40,10 @@ const Home = () => {
             >
             <div className="home__contact-me">
                 <button onClick={handleNavToContactMe}>
-                    Hire Me
+                    Contact Me
+                </button>
+                <button onClick={handleNavToResume}>
+                    Resume
                 </button>
             </div>
             </Animate>

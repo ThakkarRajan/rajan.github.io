@@ -44,7 +44,7 @@ const About = () => {
                     <Animate
                         play
                         duration={1.5}
-                        delay={1}
+                        delay={0}
                         start={{
                             transform: 'translateX(-950px)'
 
@@ -62,7 +62,7 @@ const About = () => {
                     <Animate
                         play
                         duration={1.5}
-                        delay={1}
+                        delay={0}
                         start={{
                             transform: 'translateY(950px)'
 
@@ -98,7 +98,7 @@ const About = () => {
                 <Animate
                         play
                         duration={1.5}
-                        delay={1}
+                        delay={0}
                         start={{
                             transform: 'translateX(600px)'
 

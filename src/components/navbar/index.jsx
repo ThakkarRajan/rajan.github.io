@@ -31,6 +31,9 @@ const Navbar = () => {
     const handleToggleIcon = () => {
         setToggleIcon(!toggleIcon)
     }
+    const handleLinkClick = () => {
+        setToggleIcon(false)  
+    }
     return (
         <div>
             <nav className="navbar">
@@ -45,7 +48,7 @@ const Navbar = () => {
                     {
                         data.map((item, index) => (
                             <li key={index} className="navbar__container__menu__item">
-                                <Link to={item.to} className="navbar__container__menu__item__links">
+                                <Link to={item.to} className="navbar__container__menu__item__links"  onClick={handleLinkClick} >
                                     {item.label
                                     }</Link>
                             </li>

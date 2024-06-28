@@ -71,7 +71,44 @@
         position: absolute;
         top: 80px;
         left: -110px;
-        opacity: 0;
+        left: -110%;  
+        opacity: 1;  
+        
+        
+        
+        &.active{
+            transition: all 0.5s ease;
+            background: var(--yellow-theme-nav-background);
+            left: 0%;
+            opacity: 1;
+        }
+
+        &__item{
+            border-bottom: 1px solid #282828;
+            padding: 20px 0px;
+            margin: 0%;
+        }
+
+    }
+    .nav-icon{
+        display: block;
+        cursor: pointer;
+        color: var(--yellow-theme-main-color);
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width : 550px){
+    .navbar__container__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110px;
+        left: -110%;  
+        opacity: 1;  
+        
         
         
         &.active{
