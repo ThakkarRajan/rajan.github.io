@@ -19,11 +19,17 @@ const projects = [
       link: 'https://github.com/ThakkarRajan/NaturalWalk-iOS-Application'
     },
     {
-      id: 3,
-      title: 'News App',
-      imageUrl: 'https://cdn-icons-png.flaticon.com/512/741/741867.png',
-      link: 'https://github.com/ThakkarRajan/News-Application'
-    }
+        id: 3,
+        title: 'News App',
+        imageUrl: 'https://cdn-icons-png.flaticon.com/512/741/741867.png',
+        link: 'https://github.com/ThakkarRajan/News-Application'
+      },
+      {
+        id: 4,
+        title: 'My Alarm App',
+        imageUrl: 'https://pics.craiyon.com/2023-06-16/e69950f8567b402cad26c1c1f7ebe15d.webp',
+        link: 'https://github.com/ThakkarRajan/MyAlarmByRajan'
+      }
   ];
 
   
