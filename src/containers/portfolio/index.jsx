@@ -8,7 +8,7 @@ const projects = [
     {
       id: 1,
       title: 'Weather App',
-      imageUrl: 'https://private-user-images.githubusercontent.com/133991447/340939279-6a87350e-be0b-4e37-8701-77ccf623731e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE0MDk5ODQsIm5iZiI6MTcyMTQwOTY4NCwicGF0aCI6Ii8xMzM5OTE0NDcvMzQwOTM5Mjc5LTZhODczNTBlLWJlMGItNGUzNy04NzAxLTc3Y2NmNjIzNzMxZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOVQxNzIxMjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNzMzNmI0ZDNjZDE3YjRhYjk5ZGVkMDI5ZmRkMTA3MDhkOTQxYWE4OTYwZWU3MmMwZTEwZjk2NDAyYjA3MWFkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bx6M18GbkC6Rm6upjOeAIvfcUtXJG84RMahBZJYDz_c',
+      imageUrl: 'https://github-production-user-asset-6210df.s3.amazonaws.com/133991447/340939279-6a87350e-be0b-4e37-8701-77ccf623731e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240719T184255Z&X-Amz-Expires=300&X-Amz-Signature=2f8829671364d792557ee29a551a141f8f9b3977d34cc1c2bd868a21a49d1437&X-Amz-SignedHeaders=host&actor_id=133991447&key_id=0&repo_id=816973334',
       link: 'https://github.com/ThakkarRajan/Weather-App'
     },
     {
