@@ -15,7 +15,7 @@ const projects = [
       id: 2,
       title: 'NaturalWalk iOS Application',
       description: 'This is a brief description of Project Two.',
-      imageUrl: 'http://naturewalkproducts.com/wp-content/uploads/2016/09/Nature-Walk-logo-1170x1170.png',
+      imageUrl: 'https://images.squarespace-cdn.com/content/v1/592b029d1b10e3b323809b40/1246d372-c979-474b-ae78-101a8b97ae3b/logosign.png?format=1500w',
       link: 'https://github.com/ThakkarRajan/NaturalWalk-iOS-Application'
     },
     {

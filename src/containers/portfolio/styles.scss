@@ -54,6 +54,9 @@
   width: 100%;
   height: auto;
   background-color: white;
+  
+  object-fit: contain;
+  object-position: center;
 }
 
 .project-card h3 {
@@ -70,6 +73,12 @@
 .project-card:hover {
   transform: scale(1.05);
 }
+@media only screen and (max-width: 768px) {
+  .projects__header h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
 
 @media only screen and (max-width: 550px) {
   .projects__header h2 {
@@ -79,20 +88,6 @@
 
   .project-card {
     width: calc(50% - 20px);
-  }
-}
-
-@media only screen and (min-width: 551px) and (max-width: 768px) {
-  .projects__header h2 {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 990px) {
-  .projects__header h2 {
-    font-size: 3.5rem;
-    line-height: 4.5rem;
   }
 }
 
