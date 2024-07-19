@@ -39,9 +39,9 @@ const Home = () => {
             }}
             >
             <div className="home__contact-me">
-                <button onClick={handleNavToContactMe}>
-                    Contact Me
-                </button>
+            <button onClick={() => window.open('https://www.linkedin.com/in/thakkarrajanca/', '_blank')}>
+    Contact Me
+</button>   
                 <button onClick={handleNavToResume}>
                     Resume
                 </button>
