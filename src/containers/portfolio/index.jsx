@@ -8,7 +8,7 @@ const projects = [
     {
       id: 1,
       title: 'Weather App',
-      imageUrl: 'https://img.freepik.com/premium-vector/weather-cloud-sun-rain-lightning-logo-design-symbol-icon-template_23729-1780.jpg?w=740',
+      imageUrl: 'https://github-production-user-asset-6210df.s3.amazonaws.com/133991447/340939279-6a87350e-be0b-4e37-8701-77ccf623731e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240719T184255Z&X-Amz-Expires=300&X-Amz-Signature=2f8829671364d792557ee29a551a141f8f9b3977d34cc1c2bd868a21a49d1437&X-Amz-SignedHeaders=host&actor_id=133991447&key_id=0&repo_id=816973334',
       link: 'https://github.com/ThakkarRajan/Weather-App'
     },
     {
