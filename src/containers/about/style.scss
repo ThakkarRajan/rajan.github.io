@@ -97,8 +97,28 @@
 
                 div:nth-child(4) {
                     position: absolute;
-                    left: -8%;
+                    left: -9%;
                     top: 41%
+                }
+                div:nth-child(5) {
+                    position: absolute;
+                    left: 4%;
+                    top: 5%
+                }
+                div:nth-child(6) {
+                    position: absolute;
+                    bottom: 4%;
+                    left: 5%
+                }
+                div:nth-child(7) {
+                    position: absolute;
+                    top: 75%;
+                    right:  5%
+                }
+                div:nth-child(8) {
+                    position: absolute;
+                    right: 4%;
+                    top: 5%
                 }
             }
         }

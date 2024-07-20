@@ -2,6 +2,12 @@ import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from "react-simple-animate";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { TiHtml5 } from "react-icons/ti";
+
+import { FaAws } from "react-icons/fa";
+
 import './style.scss'
 
 import { DiAndroid, DiApple } from 'react-icons/di'
@@ -125,6 +131,18 @@ const About = () => {
                         </div>
                         <div>
                             <DiApple size={60} color="var(--yellow-theme-main-color)" />
+                        </div>
+                        <div>
+                            <FaReact size={60} color="var(--yellow-theme-main-color)" />
+                        </div>
+                        <div>
+                            <IoLogoJavascript  size={60} color="var(--yellow-theme-main-color)" />
+                        </div>
+                        <div>
+                            <TiHtml5  size={60} color="var(--yellow-theme-main-color)" />
+                        </div>
+                        <div>
+                            <FaAws   size={60} color="var(--yellow-theme-main-color)" />
                         </div>
                     </div>
                     </Animate>
