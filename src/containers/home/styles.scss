@@ -6,10 +6,10 @@
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 10%;
-  margin-bottom: 10%;
 
+  margin-bottom: 10%;
   &__text-wrapper {
+    margin-top: 10%;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -56,10 +56,10 @@
 
 @media only screen and (max-width: 550px) {
   .home {
-    margin-top: 60%;
     margin-bottom: 60%;
   }
   .home__text-wrapper h1 {
+    margin-top: 60%;
     font-size: 2.5rem;
     line-height: 6rem;
   }
@@ -71,10 +71,10 @@
 
 @media only screen and (min-width: 551px) and (max-width: 768px) {
   .home {
-    margin-top: 50%;
     margin-bottom: 50%;
   }
   .home__text-wrapper h1 {
+    margin-top: 50%;
     font-size: 3.5rem;
     line-height: 6rem;
   }
