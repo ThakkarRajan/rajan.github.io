@@ -33,6 +33,7 @@ const projects = [
   title: "Harsmo Ventures Website",
   type: "Business Website",
   icon: "🚢",
+    link: "https://harsmo-ventures-1syw.vercel.app/",
   description:
     "A responsive and professional React-based website built for an international import-export company, showcasing their services, company profile, and contact info with modern UI/UX design.",
   
