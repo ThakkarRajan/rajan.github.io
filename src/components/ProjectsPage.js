@@ -30,6 +30,15 @@ const projects = [
       "A real-time carpooling app to simplify commutes with Firebase tracking and login.",
   },
   {
+  title: "Harsmo Ventures Website",
+  type: "Business Website",
+  icon: "🚢",
+  description:
+    "A responsive and professional React-based website built for an international import-export company, showcasing their services, company profile, and contact info with modern UI/UX design.",
+  
+}
+,
+  {
     title: "Lavish Look Salon Website",
     type: "Website",
     icon: "💇",
