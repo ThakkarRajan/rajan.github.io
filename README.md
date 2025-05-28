@@ -50,7 +50,7 @@ Edit
 
 1. **Clone this repo**
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+   git clone https://github.com/your-username/rajan.github.io.git
    cd your-portfolio
 Install dependencies
 
