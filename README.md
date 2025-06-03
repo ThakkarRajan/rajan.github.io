@@ -6,7 +6,8 @@ Welcome to my personal developer portfolio, built to showcase my projects, skill
 
 Check out the demo video below for a full walkthrough:
 
-[![Watch the video](https://youtu.be/3dPKNPodXXU)
+[![Watch the video](https://img.youtube.com/vi/3dPKNPodXXU/0.jpg)](https://www.youtube.com/watch?v=3dPKNPodXXU)
+
 
 > _Click the image to watch the video on YouTube_
 
