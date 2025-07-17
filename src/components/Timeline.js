@@ -3,8 +3,13 @@ import "../styles.css";
 
 const experienceEntries = [
   {
+    title: "SnapCycle – Lead Full Stack Developer",
+    time: "June 2025 – Pesent",
+    icon: "🚀",
+  },
+  {
     title: "Vosyn – Full Stack Developer",
-    time: "Aug 2024 – Present",
+    time: "Aug 2024 – Dec 2024",
     icon: "💻",
   },
   {
@@ -20,10 +25,22 @@ const experienceEntries = [
 ];
 
 const educationEntries = [
-  { title: "Mobile Application Development - George Brown College", time: "2024", icon: "📱" },
-  { title: "Big Data Solution Architecture - Conestoga College", time: "2023", icon: "📊" },
+  {
+    title: "Mobile Application Development - George Brown College",
+    time: "2024",
+    icon: "📱",
+  },
+  {
+    title: "Big Data Solution Architecture - Conestoga College",
+    time: "2023",
+    icon: "📊",
+  },
   { title: "M.sc. in AI & ML - Gujarat University", time: "2022", icon: "🎓" },
-  { title: "Bachelor of Computer Application - Marwadi University", time: "2020", icon: "🏫" },
+  {
+    title: "Bachelor of Computer Application - Marwadi University",
+    time: "2020",
+    icon: "🏫",
+  },
 ];
 
 const Timeline = () => (
