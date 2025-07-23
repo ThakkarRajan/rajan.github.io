@@ -5,12 +5,12 @@ import Starfield from "./Starfield";
 
 const projects = [
   {
-    title: "AI Resume Pro",
+    title: "I Love Resumes",
     type: "Web App",
     icon: "🚀",
     description:
       "An AI-powered resume tailoring tool with smart job matching, live editing, and PDF/Word export.",
-    link: "https://airesumepro.vercel.app/",
+    link: "https://iloveresumes.com",
     priority: 1,
   },
   {
@@ -30,15 +30,13 @@ const projects = [
       "A real-time carpooling app to simplify commutes with Firebase tracking and login.",
   },
   {
-  title: "Harsmo Ventures Website",
-  type: "Business Website",
-  icon: "🚢",
+    title: "Harsmo Ventures Website",
+    type: "Business Website",
+    icon: "🚢",
     link: "https://harsmo-ventures-1syw.vercel.app/",
-  description:
-    "A responsive and professional React-based website built for an international import-export company, showcasing their services, company profile, and contact info with modern UI/UX design.",
-  
-}
-,
+    description:
+      "A responsive and professional React-based website built for an international import-export company, showcasing their services, company profile, and contact info with modern UI/UX design.",
+  },
   {
     title: "Lavish Look Salon Website",
     type: "Website",
