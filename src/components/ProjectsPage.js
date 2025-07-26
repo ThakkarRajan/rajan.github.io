@@ -10,7 +10,7 @@ const projects = [
     icon: "🚀",
     description:
       "An AI-powered resume tailoring tool with smart job matching, live editing, and PDF/Word export.",
-    link: "https://iloveresumes.com",
+    link: "https://iloveresumes.ca",
     priority: 1,
   },
   {
