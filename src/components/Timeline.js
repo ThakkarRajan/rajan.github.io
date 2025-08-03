@@ -4,7 +4,7 @@ import "../styles.css";
 const experienceEntries = [
   {
     title: "SnapCycle – Lead Full Stack Developer",
-    time: "June 2025 – Pesent",
+    time: "June 2025 – Present",
     icon: "🚀",
   },
   {
