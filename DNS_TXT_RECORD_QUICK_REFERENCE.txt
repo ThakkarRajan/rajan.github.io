@@ -1,0 +1,30 @@
+═══════════════════════════════════════════════════════════════
+  QUICK REFERENCE: DNS TXT Record for Google Search Console
+═══════════════════════════════════════════════════════════════
+
+Domain: rajan.codes
+Record Type: TXT
+
+┌─────────────────────────────────────────────────────────────┐
+│  TXT Record Details                                          │
+├─────────────────────────────────────────────────────────────┤
+│  Name/Host:  @  (or blank, or rajan.codes)                  │
+│  Type:       TXT                                             │
+│  Value:      google-site-verification=H_nn4uAIeilUBeD2TToIy │
+│              SDDIkcLOiK-djRj3fHy1TA                          │
+│  TTL:        3600 (1 hour) or default                       │
+└─────────────────────────────────────────────────────────────┘
+
+Full Value (copy exactly):
+───────────────────────────────────────────────────────────────
+google-site-verification=H_nn4uAIeilUBeD2TToIySDDIkcLOiK-djRj3fHy1TA
+───────────────────────────────────────────────────────────────
+
+⚠️  IMPORTANT:
+   • Copy the value EXACTLY as shown above
+   • No quotes, no extra spaces
+   • Wait 24-48 hours for DNS propagation
+   • Verify using: nslookup -type=TXT rajan.codes
+
+═══════════════════════════════════════════════════════════════
+

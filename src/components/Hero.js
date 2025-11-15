@@ -5,22 +5,22 @@ import Starfield from "./Starfield";
 const Hero = () => (
   <>
     <Starfield />
-    <header className="hero-section" id="hero-section">
+    <header className="hero-section" id="hero-section" itemScope itemType="https://schema.org/Person">
       <div className="hero-3d-card">
         <div className="card-content">
           <h1>
-            Hi, I'm Rajan V. Thakkar{" "}
+            Hi, I'm <span itemProp="name">Rajan V. Thakkar</span>{" "}
             <span className="wave-emoji" role="img" aria-label="waving hand">
               👋
             </span>
           </h1>
 
-          <p>Full Stack Developer | Toronto, Canada</p>
-          <p>
-            Specializing in scalable web/mobile apps, AI tools & backend systems
+          <p itemProp="jobTitle">Full Stack Developer | <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress"><span itemProp="addressLocality">Toronto</span>, <span itemProp="addressCountry">Canada</span></span></p>
+          <p itemProp="description">
+            <strong>Rajan</strong> is an expert <strong>developer</strong> specializing in scalable web/mobile apps, AI tools & backend systems. Hire a skilled <strong>developer</strong> for your next project.
           </p>
           <div>
-            <a href="#projects" className="btn">
+            <a href="#projects" className="btn" aria-label="Explore Rajan's developer projects">
               Explore Projects
             </a>
           </div>

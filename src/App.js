@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 
 import ProjectsPage from "./components/ProjectsPage";
+import Blog from "./components/Blog";
 import ContactPage from "./components/ContactPage";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <Navbar />
       <Hero />
       <Timeline />
-      <ProjectsPage /> {/* ⬅️ New section here */}
+      <ProjectsPage />
+      <Blog />
       <Resume />
       <ContactPage />
       <Footer />
