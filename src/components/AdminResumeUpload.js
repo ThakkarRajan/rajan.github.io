@@ -10,6 +10,7 @@ const AdminResumeUpload = () => {
   const [message, setMessage] = useState("");
   const [cloudName, setCloudName] = useState("");
   const [uploadPreset, setUploadPreset] = useState("");
+  const [currentResume, setCurrentResume] = useState(null);
 
   // Simple password check (you can change this password)
   const ADMIN_PASSWORD = process.env.REACT_APP_ADMIN_PASSWORD || "change-this-password";
@@ -26,9 +27,26 @@ const AdminResumeUpload = () => {
       // Load Cloudinary config from env
       setCloudName(process.env.REACT_APP_CLOUDINARY_CLOUD_NAME || "");
       setUploadPreset(process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET || "");
+      
+      // Load current resume config
+      const storedConfig = localStorage.getItem("resumeConfig");
+      if (storedConfig) {
+        try {
+          setCurrentResume(JSON.parse(storedConfig));
+        } catch (error) {
+          console.error("Error parsing stored config:", error);
+        }
+      }
     } else {
       setMessage(`Incorrect password. Access denied. (Hint: Check browser console for debug info)`);
     }
+  };
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setMessage("✅ URL copied to clipboard!");
+      setTimeout(() => setMessage(""), 2000);
+    });
   };
 
   const uploadToCloudinary = async (file, folder = "resume") => {
@@ -89,6 +107,7 @@ const AdminResumeUpload = () => {
       };
 
       localStorage.setItem("resumeConfig", JSON.stringify(config));
+      setCurrentResume(config);
       
       setMessage(
         `✅ Upload successful! 
@@ -150,6 +169,69 @@ Or rebuild your site to use localStorage values.`
         <p className="admin-instructions">
           Upload your resume PDF and preview image. They will be stored in Cloudinary and automatically update on your portfolio.
         </p>
+
+        {currentResume && (
+          <div className="current-resume-info">
+            <h3>📋 Current Resume</h3>
+            <div className="resume-url-display">
+              <div className="url-item">
+                <strong>PDF:</strong>
+                <span className="url-text" title={currentResume.resumePdfUrl}>
+                  {currentResume.resumePdfUrl.length > 50 
+                    ? currentResume.resumePdfUrl.substring(0, 50) + "..." 
+                    : currentResume.resumePdfUrl}
+                </span>
+                <button 
+                  type="button"
+                  onClick={() => copyToClipboard(currentResume.resumePdfUrl)}
+                  className="copy-btn"
+                  title="Copy URL"
+                >
+                  📋
+                </button>
+                <a 
+                  href={currentResume.resumePdfUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="view-btn"
+                  title="View PDF"
+                >
+                  🔗
+                </a>
+              </div>
+              <div className="url-item">
+                <strong>Preview:</strong>
+                <span className="url-text" title={currentResume.resumePreviewUrl}>
+                  {currentResume.resumePreviewUrl.length > 50 
+                    ? currentResume.resumePreviewUrl.substring(0, 50) + "..." 
+                    : currentResume.resumePreviewUrl}
+                </span>
+                <button 
+                  type="button"
+                  onClick={() => copyToClipboard(currentResume.resumePreviewUrl)}
+                  className="copy-btn"
+                  title="Copy URL"
+                >
+                  📋
+                </button>
+                <a 
+                  href={currentResume.resumePreviewUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="view-btn"
+                  title="View Image"
+                >
+                  🔗
+                </a>
+              </div>
+              {currentResume.lastUpdated && (
+                <div className="last-updated">
+                  <strong>Last Updated:</strong> {currentResume.lastUpdated}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
 
         <form onSubmit={handleSubmit}>
           <div className="upload-field">

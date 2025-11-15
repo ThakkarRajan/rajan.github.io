@@ -2,6 +2,10 @@
 User-agent: *
 Allow: /
 
+# Disallow admin panel (security)
+Disallow: /#admin
+Disallow: /*#admin
+
 # Sitemap
 Sitemap: https://rajan.codes/sitemap.xml
 
