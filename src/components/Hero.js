@@ -17,7 +17,7 @@ const Hero = () => (
 
           <p itemProp="jobTitle">Full Stack Developer | <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress"><span itemProp="addressLocality">Toronto</span>, <span itemProp="addressCountry">Canada</span></span></p>
           <p itemProp="description">
-            <strong>Rajan</strong> is an expert <strong>developer</strong> specializing in scalable web/mobile apps, AI tools & backend systems. Hire a skilled <strong>developer</strong> for your next project.
+            Expert <strong>developer</strong> specializing in scalable web/mobile apps, AI tools & backend systems. Available for your next project.
           </p>
           <div>
             <a href="#projects" className="btn" aria-label="Explore Rajan's developer projects">

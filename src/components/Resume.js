@@ -11,7 +11,9 @@ const Resume = () => (
       <div style={{ textAlign: "center", padding: "2rem 0" }}>
         <img
           src="/resume-preview.jpg"
-          alt="Rajan V. Thakkar Resume Preview"
+          alt="Rajan Thakkar Full Stack Developer Resume - React Node.js JavaScript Expert Toronto Canada"
+          title="Rajan Thakkar Developer Resume"
+          loading="lazy"
           style={{
             maxWidth: "400px",
             width: "100%",

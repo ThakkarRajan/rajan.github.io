@@ -17,9 +17,9 @@ function App() {
       <Hero />
       <Timeline />
       <ProjectsPage />
-      <Blog />
       <Resume />
       <ContactPage />
+      <Blog />
       <Footer />
     </>
   );

@@ -39,11 +39,21 @@ const ContactPage = () => {
     <>
       <Starfield />
 
-      <section id="contact" className="contact-section">
-        <h2 className="section-title">📬 Let’s Connect</h2>
-        <p className="contact-intro">
-          I’d love to hear from you! Whether it’s about tech, jobs, or memes 😄
+      <section id="contact" className="contact-section" itemScope itemType="https://schema.org/ContactPage">
+        <h2 className="section-title" itemProp="name">📬 Let's Connect</h2>
+        <p className="contact-intro" itemProp="description">
+          I'd love to hear from you! Whether it's about tech, jobs, or memes 😄
         </p>
+        <div itemScope itemType="https://schema.org/Person" style={{display: 'none'}}>
+          <meta itemProp="name" content="Rajan Thakkar" />
+          <meta itemProp="email" content="thakkarrajanca@gmail.com" />
+          <meta itemProp="telephone" content="+1-437-755-3112" />
+          <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+            <meta itemProp="addressLocality" content="Toronto" />
+            <meta itemProp="addressRegion" content="Ontario" />
+            <meta itemProp="addressCountry" content="CA" />
+          </div>
+        </div>
 
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <input name="name" type="text" placeholder="Your Name" required />
@@ -59,9 +69,16 @@ const ContactPage = () => {
           </button>
         </form>
 
-        <p className="contact-note">
-          Prefer socials? Scroll up and click GitHub or LinkedIn!
-        </p>
+        <div className="contact-info" itemScope itemType="https://schema.org/ContactPoint">
+          <p className="contact-note">
+            <strong>Direct Contact:</strong><br />
+            <a href="mailto:thakkarrajanca@gmail.com" itemProp="email">📧 thakkarrajanca@gmail.com</a><br />
+            <a href="tel:+14377553112" itemProp="telephone">📞 +1 (437) 755-3112</a>
+          </p>
+          <p className="contact-note">
+            Prefer socials? Scroll up and click GitHub or LinkedIn!
+          </p>
+        </div>
 
         {showToast && <div className="snackbar">{toastMessage}</div>}
       </section>

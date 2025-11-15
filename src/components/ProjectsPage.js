@@ -93,22 +93,24 @@ const ProjectsPage = () => {
         <RevealOnScroll>
           <div className="projects-grid">
             {sorted.map((project, index) => (
-              <div className="project-card" key={index}>
-                <div className="emoji">{project.icon}</div>
-
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
+              <article className="project-card" key={index} itemScope itemType="https://schema.org/SoftwareApplication">
+                <div className="emoji" role="img" aria-label={`${project.type} project icon`}>{project.icon}</div>
+                <h3 itemProp="name">{project.title}</h3>
+                <p itemProp="description">{project.description}</p>
                 {project.link && (
                   <a
                     className="btn"
                     href={project.link}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
+                    itemProp="url"
+                    aria-label={`Visit ${project.title} - ${project.type}`}
                   >
                     Visit
                   </a>
                 )}
-              </div>
+                <meta itemProp="applicationCategory" content={project.type} />
+              </article>
             ))}
           </div>
         </RevealOnScroll>

@@ -45,18 +45,18 @@ const educationEntries = [
 
 const Timeline = () => (
   <>
-    <section id="timeline" className="timeline">
+    <section id="timeline" className="timeline" itemScope itemType="https://schema.org/Person">
       <h2 className="timeline-heading">Journey</h2>
 
       <h3 className="timeline-subheading">💼 Experience</h3>
-      <div className="timeline-container">
+      <div className="timeline-container" itemScope itemType="https://schema.org/ItemList">
         {experienceEntries.map((entry, i) => (
           <TimelineItem key={i} entry={entry} isLeft={i % 2 === 0} />
         ))}
       </div>
 
       <h3 className="timeline-subheading">🎓 Education</h3>
-      <div className="timeline-container">
+      <div className="timeline-container" itemScope itemType="https://schema.org/ItemList">
         {educationEntries.map((entry, i) => (
           <TimelineItem key={i} entry={entry} isLeft={i % 2 === 0} />
         ))}
