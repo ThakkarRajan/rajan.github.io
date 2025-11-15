@@ -76,7 +76,7 @@ If you'd like to get in touch, feel free to connect with me:
 
 📧 thakkarrajanca@gmail.com
 
-🌐 rajanthakkar.me
+🌐 rajan.codes
 
 💼 LinkedIn
 
