@@ -10,7 +10,11 @@
 
 # production
 /build
-/*.md*/
+
+# Markdown files
+*.md
+**/*.md
+
 # misc
 .DS_Store
 .env
