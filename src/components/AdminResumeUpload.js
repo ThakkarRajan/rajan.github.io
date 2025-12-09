@@ -54,13 +54,18 @@ const AdminResumeUpload = () => {
       throw new Error("Cloudinary configuration missing. Please set REACT_APP_CLOUDINARY_CLOUD_NAME and REACT_APP_CLOUDINARY_UPLOAD_PRESET");
     }
 
+    // Determine resource type based on file type
+    // PDFs should use 'raw' resource type, images use 'image'
+    const isPdf = file.type === "application/pdf";
+    const resourceType = isPdf ? "raw" : "image";
+
     const formData = new FormData();
     formData.append("file", file);
     formData.append("upload_preset", uploadPreset);
     formData.append("folder", folder);
 
     const response = await fetch(
-      `https://api.cloudinary.com/v1_1/${cloudName}/auto/upload`,
+      `https://api.cloudinary.com/v1_1/${cloudName}/${resourceType}/upload`,
       {
         method: "POST",
         body: formData,

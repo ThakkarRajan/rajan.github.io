@@ -1,31 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Starfield from "./Starfield";
 import resumeConfig from "../config/resumeConfig.json";
 
 const Resume = () => {
-  const [resumeUrls, setResumeUrls] = useState({
+  const [imageError, setImageError] = useState(false);
+  
+  // Use local files from public folder
+  const resumeUrls = {
     pdf: resumeConfig.resumePdfUrl || "/resume.pdf",
     preview: resumeConfig.resumePreviewUrl || "/resume-preview.jpg",
-  });
-  const [imageError, setImageError] = useState(false);
-
-  useEffect(() => {
-    // Check localStorage for updated resume URLs (from admin upload)
-    const storedConfig = localStorage.getItem("resumeConfig");
-    if (storedConfig) {
-      try {
-        const config = JSON.parse(storedConfig);
-        if (config.resumePdfUrl) {
-          setResumeUrls({
-            pdf: config.resumePdfUrl,
-            preview: config.resumePreviewUrl || resumeConfig.resumePreviewUrl || "/resume-preview.jpg",
-          });
-        }
-      } catch (error) {
-        console.error("Error parsing stored resume config:", error);
-      }
-    }
-  }, []);
+  };
 
   return (
     <>
