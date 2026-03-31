@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Caliber Construction Dashboard preview">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a2418"/>
+      <stop offset="100%" style="stop-color:#0f1218"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <rect x="60" y="80" width="680" height="290" rx="12" fill="rgba(200,170,90,0.1)" stroke="rgba(200,170,90,0.35)" stroke-width="2"/>
+  <text x="400" y="220" text-anchor="middle" fill="#e8c56c" font-family="ui-sans-serif,system-ui,sans-serif" font-size="24" font-weight="600">Caliber Construction</text>
+  <text x="400" y="255" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">Team dashboard &amp; analytics</text>
+</svg>

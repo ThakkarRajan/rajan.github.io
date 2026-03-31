@@ -2,25 +2,50 @@ import React from "react";
 import "../styles.css";
 import Starfield from "./Starfield";
 
+const heroHeadshotSrc = `${process.env.PUBLIC_URL}/images/rajan-thakkar-professional-headshot.jpg`;
+
 const Hero = () => (
   <>
     <Starfield />
     <header className="hero-section" id="hero-section" itemScope itemType="https://schema.org/Person">
+      <span itemProp="alternateName" className="hero-sr-only">
+        Rajan V. Thakkar
+      </span>
       <div className="hero-3d-card">
-        <div className="card-content">
-          <h1>
-            Hi, I'm <span itemProp="name">Rajan V. Thakkar</span>{" "}
-            <span className="wave-emoji" role="img" aria-label="waving hand">
-              👋
-            </span>
+        <div className="card-content hero-card-content">
+          <div className="hero-profile-ring" aria-hidden="true">
+            <img
+              className="hero-profile-img"
+              src={heroHeadshotSrc}
+              alt="Rajan Thakkar — full stack developer, Toronto, Canada — professional headshot"
+              width={240}
+              height={240}
+              decoding="async"
+              itemProp="image"
+            />
+          </div>
+          <h1 className="hero-title">
+            <span itemProp="name">Rajan Thakkar</span>
+            {" — "}
+            <span itemProp="jobTitle">Full Stack Developer</span>
           </h1>
 
-          <p itemProp="jobTitle">Full Stack Developer | <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress"><span itemProp="addressLocality">Toronto</span>, <span itemProp="addressCountry">Canada</span></span></p>
-          <p itemProp="description">
-            Expert <strong>developer</strong> specializing in scalable web/mobile apps, AI tools & backend systems. Available for your next project.
+          <p
+            className="hero-location"
+            itemProp="address"
+            itemScope
+            itemType="https://schema.org/PostalAddress"
+          >
+            <span itemProp="addressLocality">Toronto</span>, <span itemProp="addressRegion">Ontario</span>,{" "}
+            <span itemProp="addressCountry">Canada</span>
           </p>
-          <div>
-            <a href="#projects" className="btn" aria-label="Explore Rajan's developer projects">
+
+          <p itemProp="description" className="hero-description">
+            Scalable web and mobile products with <strong>React</strong>, <strong>Node.js</strong>,{" "}
+            <strong>TypeScript</strong>, and AI-assisted workflows—from APIs to polished interfaces.
+          </p>
+          <div className="hero-cta">
+            <a href="#projects" className="btn" aria-label="Explore Rajan Thakkar's developer projects">
               Explore Projects
             </a>
           </div>
@@ -32,12 +57,7 @@ const Hero = () => (
               className="social-icon"
               aria-label="LinkedIn"
             >
-              <svg
-                height="28"
-                viewBox="0 0 24 24"
-                width="28"
-                fill="currentColor"
-              >
+              <svg height="28" viewBox="0 0 24 24" width="28" fill="currentColor">
                 <path
                   d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 
                   2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 
@@ -57,12 +77,7 @@ const Hero = () => (
               className="social-icon"
               aria-label="GitHub"
             >
-              <svg
-                height="28"
-                viewBox="0 0 16 16"
-                width="28"
-                fill="currentColor"
-              >
+              <svg height="28" viewBox="0 0 16 16" width="28" fill="currentColor">
                 <path
                   d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
                   2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 

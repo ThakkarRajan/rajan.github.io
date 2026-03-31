@@ -20,7 +20,7 @@ Full Value (copy exactly):
 google-site-verification=H_nn4uAIeilUBeD2TToIySDDIkcLOiK-djRj3fHy1TA
 ───────────────────────────────────────────────────────────────
 
-⚠️  IMPORTANT:
+IMPORTANT:
    • Copy the value EXACTLY as shown above
    • No quotes, no extra spaces
    • Wait 24-48 hours for DNS propagation

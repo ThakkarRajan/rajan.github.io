@@ -3,6 +3,10 @@ import emailjs from "emailjs-com";
 import "../styles.css";
 import Starfield from "./Starfield";
 
+const SITE_ORIGIN = "https://rajan.codes";
+const profileImagePath = "/images/rajan-thakkar-professional-headshot.jpg";
+const profileImageAbsoluteUrl = `${SITE_ORIGIN}${process.env.PUBLIC_URL}${profileImagePath}`;
+
 const ContactPage = () => {
   const form = useRef();
   const [toastMessage, setToastMessage] = useState("");
@@ -26,11 +30,11 @@ const ContactPage = () => {
       )
       .then(
         () => {
-          showSnackbar("✅ Message sent successfully!");
+          showSnackbar("Message sent successfully.");
           form.current.reset();
         },
         () => {
-          showSnackbar("❌ Failed to send message. Please try again.");
+          showSnackbar("Failed to send message. Please try again.");
         }
       );
   };
@@ -40,12 +44,30 @@ const ContactPage = () => {
       <Starfield />
 
       <section id="contact" className="contact-section" itemScope itemType="https://schema.org/ContactPage">
-        <h2 className="section-title" itemProp="name">📬 Let's Connect</h2>
-        <p className="contact-intro" itemProp="description">
-          I'd love to hear from you! Whether it's about tech, jobs, or memes 😄
-        </p>
+        <div className="contact-header">
+          {/* <div className="contact-profile-ring" aria-hidden="true">
+            <img
+              className="contact-profile-img"
+              src={profileImageSrc}
+              alt="Rajan Thakkar — full stack developer, Toronto, Canada — professional headshot"
+              title="Rajan Thakkar, full stack developer"
+              width={192}
+              height={192}
+              decoding="async"
+            />
+          </div> */}
+          <div className="contact-header-text">
+            <h2 className="section-title" itemProp="name">
+              Get in touch
+            </h2>
+            <p className="contact-intro" itemProp="description">
+              I welcome messages about opportunities, collaboration, and technical projects.
+            </p>
+          </div>
+        </div>
         <div itemScope itemType="https://schema.org/Person" style={{display: 'none'}}>
           <meta itemProp="name" content="Rajan Thakkar" />
+          <meta itemProp="image" content={profileImageAbsoluteUrl} />
           <meta itemProp="email" content="thakkarrajanca@gmail.com" />
           <meta itemProp="telephone" content="+1-437-755-3112" />
           <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
@@ -65,15 +87,15 @@ const ContactPage = () => {
             required
           ></textarea>
           <button type="submit" className="btn">
-            Send Message 🚀
+            Send message
           </button>
         </form>
 
         <div className="contact-info" itemScope itemType="https://schema.org/ContactPoint">
           <p className="contact-note">
             <strong>Direct Contact:</strong><br />
-            <a href="mailto:thakkarrajanca@gmail.com" itemProp="email">📧 thakkarrajanca@gmail.com</a><br />
-            <a href="tel:+14377553112" itemProp="telephone">📞 +1 (437) 755-3112</a>
+            <a href="mailto:thakkarrajanca@gmail.com" itemProp="email">thakkarrajanca@gmail.com</a><br />
+            <a href="tel:+14377553112" itemProp="telephone">+1 (437) 755-3112</a>
           </p>
           <p className="contact-note">
             Prefer socials? Scroll up and click GitHub or LinkedIn!

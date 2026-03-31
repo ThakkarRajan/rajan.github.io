@@ -60,11 +60,11 @@ The difference between a good developer and a great one? Great developers unders
 
 **The Red Flags I've Seen:**
 
-🚩 "I can build that in a week" (for a 3-month project)
-🚩 Ghosting you for days
-🚩 Can't show you a single working project
-🚩 Gets defensive when you ask questions
-🚩 Only talks in tech terms you can't understand
+- "I can build that in a week" (for a 3-month project)
+- Ghosting you for days
+- Can't show you a single working project
+- Gets defensive when you ask questions
+- Only talks in tech terms you can't understand
 
 **The Bottom Line**
 
@@ -173,12 +173,12 @@ I once spent 2 hours wondering why my component wasn't re-rendering. Turns out I
 **The mistake:**
 \`\`\`jsx
 const [user, setUser] = useState({ name: 'John' });
-user.name = 'Jane'; // ❌ This doesn't trigger re-render!
+user.name = 'Jane'; // Wrong: this doesn't trigger a re-render
 \`\`\`
 
 **The fix:**
 \`\`\`jsx
-setUser({ ...user, name: 'Jane' }); // ✅ This works!
+setUser({ ...user, name: 'Jane' }); // Correct: new object reference
 \`\`\`
 
 React needs to see a NEW object reference to know something changed. This one gets everyone.
@@ -214,7 +214,7 @@ useEffect(() => {
     // do something
   }, 1000);
   
-  return () => clearInterval(interval); // ✅ Don't forget this!
+  return () => clearInterval(interval); // Cleanup on unmount
 }, []);
 \`\`\`
 
@@ -410,11 +410,11 @@ The second question:
 
 **Pro Tips:**
 
-✅ **Format your code** - Use code blocks, proper indentation
-✅ **Be specific** - "useState isn't working" vs "useState hook isn't updating my component"
-✅ **Show effort** - List what you've tried
-✅ **Include errors** - The full error message, not just "it errors"
-✅ **Say thank you** - When someone helps, acknowledge it
+- **Format your code** — Use code blocks, proper indentation
+- **Be specific** — "useState isn't working" vs "useState hook isn't updating my component"
+- **Show effort** — List what you've tried
+- **Include errors** — The full error message, not just "it errors"
+- **Say thank you** — When someone helps, acknowledge it
 
 **The Result?**
 
@@ -460,8 +460,8 @@ Before you point out what's wrong, point out what's RIGHT. It sets a positive to
 
 Don't just say "change this." Explain WHY.
 
-❌ "This is wrong."
-✅ "This could cause a memory leak because..."
+**Avoid:** "This is wrong."  
+**Prefer:** "This could cause a memory leak because..."
 
 **3. Ask Questions, Don't Just Dictate**
 
@@ -473,8 +473,8 @@ Sometimes code looks wrong, but there might be a reason.
 
 Vague feedback helps no one.
 
-❌ "This could be better"
-✅ "Consider extracting this into a separate function for reusability"
+**Avoid:** "This could be better"  
+**Prefer:** "Consider extracting this into a separate function for reusability"
 
 **Receiving Feedback (The Hard Part)**
 
@@ -515,12 +515,12 @@ The second review:
 
 **My Code Review Rules:**
 
-✅ **Be kind, not nice** - Real feedback helps more than empty praise
-✅ **Explain the why** - Help others understand, not just fix
-✅ **Ask questions** - Sometimes there's a reason for "bad" code
-✅ **Praise good work** - Positive feedback matters too
-✅ **Don't take it personally** - It's about the code, not you
-✅ **Learn from it** - Every review is a learning opportunity
+- **Be kind, not nice** — Real feedback helps more than empty praise
+- **Explain the why** — Help others understand, not just fix
+- **Ask questions** — Sometimes there's a reason for "bad" code
+- **Praise good work** — Positive feedback matters too
+- **Don't take it personally** — It's about the code, not you
+- **Learn from it** — Every review is a learning opportunity
 
 **The Result?**
 
@@ -858,6 +858,18 @@ Looking for a developer who understands both code and business? Let's discuss ho
   }
 ];
 
+const blogSchemaAuthor = {
+  "@type": "Person",
+  name: "Rajan Thakkar",
+  url: "https://rajan.codes",
+  image: "https://rajan.codes/images/rajan-thakkar-og.jpg",
+  sameAs: [
+    "https://www.linkedin.com/in/thakkarrajanca/",
+    "https://github.com/thakkarrajan",
+    "https://x.com/thakkarrajan",
+  ],
+};
+
 const Blog = () => {
   const [selectedPost, setSelectedPost] = useState(null);
   const [filterCategory, setFilterCategory] = useState("All");
@@ -924,15 +936,12 @@ const Blog = () => {
               "headline": selectedPost.title,
               "description": selectedPost.excerpt,
               "datePublished": selectedPost.date,
-              "author": {
-                "@type": "Person",
-                "name": "Rajan Thakkar",
-                "url": "https://rajan.codes"
-              },
+              "author": blogSchemaAuthor,
               "publisher": {
                 "@type": "Person",
                 "name": "Rajan Thakkar",
-                "url": "https://rajan.codes"
+                "url": "https://rajan.codes",
+                "image": "https://rajan.codes/images/rajan-thakkar-og.jpg"
               },
               "mainEntityOfPage": {
                 "@type": "WebPage",
@@ -952,6 +961,14 @@ const Blog = () => {
             <header className="blog-post-header">
               <span className="blog-category">{selectedPost.category}</span>
               <h1 itemProp="headline">{selectedPost.title}</h1>
+              <p className="blog-byline">
+                By{" "}
+                <span itemProp="author" itemScope itemType="https://schema.org/Person">
+                  <a href="https://rajan.codes/" itemProp="url">
+                    <span itemProp="name">Rajan Thakkar</span>
+                  </a>
+                </span>
+              </p>
               <div className="blog-meta">
                 <time itemProp="datePublished" dateTime={selectedPost.date}>
                   {selectedPost.date}
@@ -998,10 +1015,6 @@ const Blog = () => {
               })}
             </div>
             <footer className="blog-post-footer">
-              <div itemProp="author" itemScope itemType="https://schema.org/Person">
-                <meta itemProp="name" content="Rajan Thakkar" />
-                <meta itemProp="url" content="https://rajan.codes" />
-              </div>
               <meta itemProp="publisher" content="Rajan Thakkar" />
               <meta itemProp="articleSection" content={selectedPost.category} />
               <meta itemProp="keywords" content={selectedPost.tags.join(", ")} />
@@ -1020,9 +1033,10 @@ const Blog = () => {
       <Starfield />
       <section ref={blogSectionRef} id="blog" className="blog-section">
         <div className="blog-header-wrapper">
-          <h2 className="section-title">📚 Developer Blog</h2>
+          <h2 className="section-title">Developer blog</h2>
           <p className="section-subtitle">
-            Sharing experiences, tips, and insights for fellow developers. Learn from my mistakes, celebrate wins together, and grow as a community.
+            Articles by <strong>Rajan Thakkar</strong>, full stack developer in Toronto—tips and lessons for fellow developers, clients, and teams building
+            web and mobile products.
           </p>
         </div>
         
@@ -1054,14 +1068,12 @@ const Blog = () => {
                     "headline": post.title,
                     "description": post.excerpt,
                     "datePublished": post.date,
-                    "author": {
-                      "@type": "Person",
-                      "name": "Rajan Thakkar",
-                      "url": "https://rajan.codes"
-                    },
+                    "author": blogSchemaAuthor,
                     "publisher": {
                       "@type": "Person",
-                      "name": "Rajan Thakkar"
+                      "name": "Rajan Thakkar",
+                      "url": "https://rajan.codes",
+                      "image": "https://rajan.codes/images/rajan-thakkar-og.jpg"
                     },
                     "mainEntityOfPage": {
                       "@type": "WebPage",
@@ -1085,6 +1097,12 @@ const Blog = () => {
                 <p className="blog-card-excerpt" itemProp="description">
                   {post.excerpt}
                 </p>
+                <p className="blog-card-byline">
+                  By{" "}
+                  <span itemProp="author" itemScope itemType="https://schema.org/Person">
+                    <span itemProp="name">Rajan Thakkar</span>
+                  </span>
+                </p>
                 <div className="blog-card-footer">
                   <div className="blog-card-tags">
                     {post.tags.slice(0, 3).map((tag, index) => (
@@ -1106,10 +1124,6 @@ const Blog = () => {
                       Read More →
                     </button>
                   </div>
-                </div>
-                <div itemProp="author" itemScope itemType="https://schema.org/Person">
-                  <meta itemProp="name" content="Rajan Thakkar" />
-                  <meta itemProp="url" content="https://rajan.codes" />
                 </div>
                 <meta itemProp="publisher" content="Rajan Thakkar" />
                 <meta itemProp="articleSection" content={post.category} />

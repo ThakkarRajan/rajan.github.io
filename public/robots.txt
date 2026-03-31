@@ -2,12 +2,6 @@
 User-agent: *
 Allow: /
 
-# Disallow admin panel (security)
-Disallow: /#admin
-Disallow: /*#admin
-
-# Sitemap
+# Sitemaps
 Sitemap: https://rajan.codes/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
+Sitemap: https://rajan.codes/sitemap-image.xml

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="NaturalWalk project preview">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3528"/>
+      <stop offset="100%" style="stop-color:#0a1410"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <rect x="60" y="80" width="680" height="290" rx="12" fill="rgba(120,200,150,0.1)" stroke="rgba(140,220,170,0.35)" stroke-width="2"/>
+  <text x="400" y="230" text-anchor="middle" fill="#8fdfb0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="600">NaturalWalk</text>
+  <text x="400" y="268" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">Mindfulness &amp; GPS walks</text>
+</svg>

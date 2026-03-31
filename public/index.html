@@ -14,6 +14,38 @@
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
     <meta name="theme-color" content="#000000" />
+    <style>
+      .skip-to-main {
+        position: absolute;
+        left: -9999px;
+        top: 0.75rem;
+        z-index: 100000;
+        padding: 0.6rem 1rem;
+        background: #f0f0f0;
+        color: #0f0f1a;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 6px;
+        font-family: system-ui, sans-serif;
+      }
+      .skip-to-main:focus {
+        left: 0.75rem;
+        outline: 2px solid #6bc1ff;
+        outline-offset: 2px;
+      }
+      .noscript-fallback {
+        padding: 1.5rem;
+        max-width: 42rem;
+        margin: 0 auto;
+        font-family: system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        color: #0f0f1a;
+        background: #f5f5f8;
+      }
+      .noscript-fallback a {
+        color: #0b5fff;
+      }
+    </style>
     <meta name="format-detection" content="telephone=yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -30,7 +62,7 @@
     <meta property="og:url" content="https://rajan.codes/" />
     <meta property="og:title" content="Rajan Thakkar - Full Stack Developer | React & Node.js Expert | Toronto" />
     <meta property="og:description" content="Skilled Full Stack Developer in Toronto, Canada. Expert in React, Node.js, JavaScript, AI tools, and scalable web/mobile applications. Available for hire. Contact me for your next project." />
-    <meta property="og:image" content="https://rajan.codes/logo512.png" />
+    <meta property="og:image" content="https://rajan.codes/images/rajan-thakkar-og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Rajan Thakkar Portfolio" />
@@ -41,7 +73,7 @@
     <meta name="twitter:url" content="https://rajan.codes/" />
     <meta name="twitter:title" content="Rajan Thakkar - Full Stack Developer | React & Node.js Expert" />
     <meta name="twitter:description" content="Skilled Full Stack Developer in Toronto. Expert in React, Node.js, JavaScript, AI tools. Available for hire. Contact me for your next project." />
-    <meta name="twitter:image" content="https://rajan.codes/logo512.png" />
+    <meta name="twitter:image" content="https://rajan.codes/images/rajan-thakkar-og.jpg" />
     <meta name="twitter:creator" content="@thakkarrajan" />
     
     <!-- Additional SEO -->
@@ -58,11 +90,12 @@
       "name": "Rajan Thakkar",
       "alternateName": "Rajan V. Thakkar",
       "url": "https://rajan.codes",
-      "image": "https://rajan.codes/logo512.png",
+      "image": "https://rajan.codes/images/rajan-thakkar-og.jpg",
       "sameAs": [
         "https://www.linkedin.com/in/thakkarrajanca/",
         "https://github.com/thakkarrajan",
-        "https://github.com/ThakkarRajan"
+        "https://github.com/ThakkarRajan",
+        "https://x.com/thakkarrajan"
       ],
       "jobTitle": "Full Stack Developer",
       "worksFor": {
@@ -140,7 +173,13 @@
         "name": "Rajan Thakkar",
         "jobTitle": "Full Stack Developer",
         "description": "Expert Full Stack Developer specializing in React, Node.js, AI tools, and scalable web/mobile applications.",
-        "url": "https://rajan.codes"
+        "url": "https://rajan.codes",
+        "image": "https://rajan.codes/images/rajan-thakkar-og.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/thakkarrajanca/",
+          "https://github.com/thakkarrajan",
+          "https://x.com/thakkarrajan"
+        ]
       }
     }
     </script>
@@ -248,7 +287,8 @@
         "sameAs": [
           "https://www.linkedin.com/in/thakkarrajanca/",
           "https://github.com/thakkarrajan",
-          "https://github.com/ThakkarRajan"
+          "https://github.com/ThakkarRajan",
+          "https://x.com/thakkarrajan"
         ]
       },
       "keywords": "contact developer, hire developer Toronto, contact Rajan Thakkar, freelance developer contact, developer available for hire"
@@ -325,10 +365,28 @@
     <link rel="icon" type="image/png" sizes="512x512" href="/logo512.png" />
     <link rel="apple-touch-icon" href="/logo192.png" />
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
   </head>
   <body>
+    <a class="skip-to-main" href="#main-content">Skip to main content</a>
+    <noscript>
+      <div class="noscript-fallback">
+        <h1>Rajan Thakkar — Full Stack Developer, Toronto, Ontario, Canada</h1>
+        <p>
+          <strong>Rajan Thakkar</strong> is a full stack developer based in Toronto, Canada, building scalable web and mobile applications with
+          <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>, and modern cloud tooling. Explore
+          <a href="https://rajan.codes/#projects">projects</a>, the <a href="https://rajan.codes/#blog">blog</a>,
+          <a href="https://rajan.codes/#resume">resume</a>, or <a href="https://rajan.codes/#contact">contact</a> on
+          <a href="https://rajan.codes/">rajan.codes</a>.
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/thakkarrajanca/">Rajan Thakkar on LinkedIn</a>
+          ·
+          <a href="https://github.com/thakkarrajan">Rajan Thakkar on GitHub</a>
+        </p>
+      </div>
+    </noscript>
     <div id="root"></div>
   </body>
 </html>

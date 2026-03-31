@@ -3,43 +3,40 @@ import "../styles.css";
 
 const experienceEntries = [
   {
-    title: "SnapCycle – Lead Full Stack Developer",
+    title: "SnapCycle – Full Stack Developer",
     time: "June 2025 – Present",
-    icon: "🚀",
   },
   {
-    title: "Vosyn – Full Stack Developer",
-    time: "Aug 2024 – Dec 2024",
-    icon: "💻",
+    title: "Vosyn – Full Stack Developer (Internship)",
+    time: "Aug 2024 – Apr 2025",
   },
   {
     title: "Freelancer – Web & Mobile Dev",
     time: "Aug 2022 – Present",
-    icon: "🌐",
   },
   {
     title: "Inferenz - Machine Learning Engineer",
-    time: "Aug 2022 – Present",
-    icon: "🧠",
+    time: "Aug 2022 – Jun 2023",
   },
 ];
 
 const educationEntries = [
   {
-    title: "Mobile Application Development - George Brown College",
-    time: "2024",
-    icon: "📱",
+    title: "Mobile Application Development and Strategy - George Brown College",
+    time: "Jan 2024 – Dec 2024",
   },
   {
     title: "Big Data Solution Architecture - Conestoga College",
-    time: "2023",
-    icon: "📊",
+    time: "Jan 2023 – Aug 2023",
   },
-  { title: "M.sc. in AI & ML - Gujarat University", time: "2022", icon: "🎓" },
+  {
+    title:
+      "M.Sc. in Artificial Intelligence and Machine Learning - Gujarat University",
+    time: "Jun 2020 – Jul 2022",
+  },
   {
     title: "Bachelor of Computer Application - Marwadi University",
-    time: "2020",
-    icon: "🏫",
+    time: "Jul 2017 – Jun 2020",
   },
 ];
 
@@ -48,14 +45,14 @@ const Timeline = () => (
     <section id="timeline" className="timeline" itemScope itemType="https://schema.org/Person">
       <h2 className="timeline-heading">Journey</h2>
 
-      <h3 className="timeline-subheading">💼 Experience</h3>
+      <h3 className="timeline-subheading">Experience</h3>
       <div className="timeline-container" itemScope itemType="https://schema.org/ItemList">
         {experienceEntries.map((entry, i) => (
           <TimelineItem key={i} entry={entry} isLeft={i % 2 === 0} />
         ))}
       </div>
 
-      <h3 className="timeline-subheading">🎓 Education</h3>
+      <h3 className="timeline-subheading">Education</h3>
       <div className="timeline-container" itemScope itemType="https://schema.org/ItemList">
         {educationEntries.map((entry, i) => (
           <TimelineItem key={i} entry={entry} isLeft={i % 2 === 0} />
@@ -87,7 +84,6 @@ const TimelineItem = ({ entry, isLeft }) => {
       <div className="content">
         <h3>{entry.title}</h3>
         <span>{entry.time}</span>
-        <span className="entry-icon">{entry.icon}</span>
       </div>
     </div>
   );

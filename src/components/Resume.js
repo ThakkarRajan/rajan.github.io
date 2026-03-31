@@ -18,7 +18,7 @@ const Resume = () => {
       <section id="resume" className="resume-section">
         {" "}
         {/* Removed `.section` */}
-        <h2 className="section-title">📄 My Resume</h2>
+        <h2 className="section-title">Resume</h2>
         <div style={{ textAlign: "center", padding: "2rem 0" }}>
           {imageError ? (
             <div style={{
@@ -31,7 +31,7 @@ const Resume = () => {
               borderRadius: "10px",
               color: "#6bc1ff"
             }}>
-              <p>📄 Resume preview unavailable</p>
+              <p>Resume preview unavailable</p>
               <p style={{ fontSize: "0.9rem", marginTop: "0.5rem", color: "#ccc" }}>
                 Click below to view the PDF directly
               </p>
