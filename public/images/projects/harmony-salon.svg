@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Harmony Salon Ahmedabad project preview">
+  <defs>
+    <linearGradient id="hsbg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a1218"/>
+      <stop offset="0.55" stop-color="#2d1824"/>
+      <stop offset="1" stop-color="#1a1520"/>
+    </linearGradient>
+    <linearGradient id="hsstroke" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8b4b8"/>
+      <stop offset="0.5" stop-color="#f5d0d6"/>
+      <stop offset="1" stop-color="#c9a8c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#hsbg)"/>
+  <rect x="56" y="72" width="688" height="306" rx="16" fill="rgba(255,255,255,0.06)" stroke="url(#hsstroke)" stroke-width="1.5"/>
+  <text x="400" y="218" text-anchor="middle" fill="#f5d0d6" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="600">Harmony Salon</text>
+  <text x="400" y="256" text-anchor="middle" fill="rgba(255,232,236,0.85)" font-family="system-ui, -apple-system, sans-serif" font-size="15">Ahmedabad — Bridal makeup — Packages and booking</text>
+  <text x="400" y="292" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-family="system-ui, -apple-system, sans-serif" font-size="13">harmonysalon.biz</text>
+</svg>

@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
   <url>
     <loc>https://rajan.codes/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <image:image>
       <image:loc>https://rajan.codes/images/rajan-thakkar-og.jpg</image:loc>
       <image:title>Rajan Thakkar — Full Stack Developer, Toronto, Canada</image:title>
-      <image:caption>Branding image for Rajan Thakkar, full stack developer based in Toronto, Canada. Portfolio: rajan.codes.</image:caption>
+      <image:caption>Rajan Thakkar (Thakkar Rajan), full stack developer, Toronto, Canada — official portfolio rajan.codes.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://rajan.codes/images/rajan-thakkar-professional-headshot.jpg</image:loc>
       <image:title>Rajan Thakkar — professional headshot</image:title>
-      <image:caption>Portrait photo of Rajan Thakkar, full stack developer in Toronto, Canada. Contact and portfolio at rajan.codes.</image:caption>
+      <image:caption>Portrait of Rajan Thakkar / Thakkar Rajan, full stack developer, Toronto. Contact and portfolio at rajan.codes.</image:caption>
     </image:image>
   </url>
 </urlset>

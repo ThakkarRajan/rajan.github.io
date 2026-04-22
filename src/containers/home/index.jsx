@@ -32,7 +32,7 @@ const Home = () => {
             <button
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/in/thakkarrajanca/",
+                  "https://www.linkedin.com/in/rajanthakkar/",
                   "_blank"
                 )
               }

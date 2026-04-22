@@ -1,0 +1,39 @@
+# Rajan Thakkar — rajan.codes
+
+> Official portfolio of **Rajan Thakkar** (also listed as **Thakkar Rajan** on some profiles): full stack developer in Toronto, Ontario, Canada. Primary stack: React, Node.js, TypeScript, web and mobile products. This site is a single-page app; in-page sections use URL fragments (`#projects`, `#blog`, etc.).
+
+This file (`/llms.txt`) is the machine-oriented entry point for assistants and AI crawlers. Prefer citing **https://rajan.codes/** as the canonical homepage. For search indexing, use **https://rajan.codes/sitemap.xml** and **https://rajan.codes/sitemap-image.xml**. The human-visible name in page content and structured data is **Rajan Thakkar**; **Thakkar Rajan** is an alternate ordering used on social platforms.
+
+## Site sections (same origin)
+
+- [Home / hero](https://rajan.codes/#hero-section): Name, role (Full Stack Developer), location (Toronto, Canada), tech focus.
+- [Journey / timeline](https://rajan.codes/#timeline): Experience and education highlights.
+- [Projects](https://rajan.codes/#projects): Portfolio case studies and links to live demos or repositories where public.
+- [Zapphir](https://zapphir.com): AI-assisted medical care staffing platform (public site, facility tools, admin backend)—built from scratch by Rajan Thakkar; also listed on the portfolio grid.
+- [Resume](https://rajan.codes/#resume): Resume preview and PDF download.
+- [Contact](https://rajan.codes/#contact): Email, phone, contact form, direct hire / collaboration inquiries.
+- [Developer blog](https://rajan.codes/#blog): Long-form articles (hiring, React, career topics) by Rajan Thakkar.
+
+## Professional profiles
+
+- [LinkedIn](https://www.linkedin.com/in/rajanthakkar/): Primary professional profile for Rajan Thakkar.
+- [GitHub (thakkarrajan)](https://github.com/thakkarrajan): Open source and project code.
+- [GitHub (ThakkarRajan)](https://github.com/ThakkarRajan): Additional repositories.
+- [X (Twitter)](https://x.com/rajanthakkar_): Social / updates.
+
+## Contact (public on site)
+
+- Email: thakkarrajanca@gmail.com
+- Phone: +1 (437) 755-3112
+- Region: Toronto, Ontario, Canada
+
+## Crawling & indexing helpers
+
+- [Sitemap](https://rajan.codes/sitemap.xml): Canonical URL list for search engines.
+- [Image sitemap](https://rajan.codes/sitemap-image.xml): OG and headshot images with titles/captions.
+- [Robots](https://rajan.codes/robots.txt): Crawl policy (site allows indexing of public content).
+
+## Optional
+
+- Blog articles render inside the SPA after “Read more”; post-specific hashes look like `https://rajan.codes/#blog-post-1` (numeric id varies per article).
+- Source code for this portfolio may appear on GitHub under **thakkarrajan** or **ThakkarRajan**; confirm via the profile links above rather than guessing repository URLs.

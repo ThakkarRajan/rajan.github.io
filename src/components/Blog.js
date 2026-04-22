@@ -864,9 +864,9 @@ const blogSchemaAuthor = {
   url: "https://rajan.codes",
   image: "https://rajan.codes/images/rajan-thakkar-og.jpg",
   sameAs: [
-    "https://www.linkedin.com/in/thakkarrajanca/",
+    "https://www.linkedin.com/in/rajanthakkar/",
     "https://github.com/thakkarrajan",
-    "https://x.com/thakkarrajan",
+    "https://x.com/rajanthakkar_",
   ],
 };
 

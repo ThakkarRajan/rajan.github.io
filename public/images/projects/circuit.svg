@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Circuit by SnapCycle app preview">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d1f16"/>
+      <stop offset="1" stop-color="#0a1410"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#cbg)"/>
+  <rect x="64" y="88" width="672" height="274" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(74, 222, 128, 0.45)" stroke-width="2"/>
+  <circle cx="400" cy="210" r="48" fill="none" stroke="rgba(74, 222, 128, 0.5)" stroke-width="3"/>
+  <path d="M388 210 L398 220 L418 196" fill="none" stroke="#4ade80" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="288" text-anchor="middle" fill="#ecfdf5" font-family="system-ui, sans-serif" font-size="28" font-weight="700">Circuit</text>
+  <text x="400" y="322" text-anchor="middle" fill="rgba(236, 253, 245, 0.55)" font-family="system-ui, sans-serif" font-size="14">SnapCycle  sort it in one photo</text>
+</svg>

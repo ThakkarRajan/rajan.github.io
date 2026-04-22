@@ -9,7 +9,7 @@ const Hero = () => (
     <Starfield />
     <header className="hero-section" id="hero-section" itemScope itemType="https://schema.org/Person">
       <span itemProp="alternateName" className="hero-sr-only">
-        Rajan V. Thakkar
+        Rajan V. Thakkar · Thakkar Rajan
       </span>
       <div className="hero-3d-card">
         <div className="card-content hero-card-content">
@@ -25,9 +25,13 @@ const Hero = () => (
             />
           </div>
           <h1 className="hero-title">
-            <span itemProp="name">Rajan Thakkar</span>
-            {" — "}
-            <span itemProp="jobTitle">Full Stack Developer</span>
+            <span className="hero-title-line" itemProp="name">
+              Rajan Thakkar
+            </span>
+            <span className="hero-title-line">
+              
+              <span itemProp="jobTitle">Full Stack Developer</span>
+            </span>
           </h1>
 
           <p
@@ -41,8 +45,9 @@ const Hero = () => (
           </p>
 
           <p itemProp="description" className="hero-description">
-            Scalable web and mobile products with <strong>React</strong>, <strong>Node.js</strong>,{" "}
-            <strong>TypeScript</strong>, and AI-assisted workflows—from APIs to polished interfaces.
+            Building software that balances product thinking, technical depth, and real usability. I create web and
+            mobile applications that are designed to perform well, scale cleanly, and deliver value beyond the first
+            release.
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn" aria-label="Explore Rajan Thakkar's developer projects">
@@ -51,7 +56,7 @@ const Hero = () => (
           </div>
           <div className="hero-links">
             <a
-              href="https://www.linkedin.com/in/thakkarrajanca/"
+              href="https://www.linkedin.com/in/rajanthakkar/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"

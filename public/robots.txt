@@ -1,7 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow: /
+Disallow:
 
-# Sitemaps
 Sitemap: https://rajan.codes/sitemap.xml
-Sitemap: https://rajan.codes/sitemap-image.xml
